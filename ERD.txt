@@ -1,0 +1,11 @@
+Material:
+id (Primary Key)
+material_code (String, Required)
+material_name (String, Required)
+material_type (Selection: Fabric, Jeans, Cotton, Required)
+material_buy_price (Float, Required, Minimum 100)
+supplier_id (Many2One ke Supplier)
+
+Supplier:
+id (Primary Key)
+name (String, Required)
